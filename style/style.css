@@ -78,7 +78,6 @@ body {
   background-color: var(--highlight-color);
   position: absolute;
   bottom: -30px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links {
   display: flex;
@@ -99,7 +98,7 @@ body {
   color: var(--first-text-color);
   font-style: normal;
   font-weight: 500;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links .list:not(:last-child) {
   margin-right: 50px;
@@ -124,7 +123,7 @@ body {
   color: var(--adress-color);
   font-style: normal;
   font-weight: 500;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links-address .list + .list {
   margin-left: 50px;
@@ -249,7 +248,7 @@ body {
   border-radius: 4px;
   background-color: var(--button-color);
   color: var(--first-text-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-button .button:focus,
 .button:hover {
@@ -275,7 +274,9 @@ body {
   cursor: pointer;
   border: none;
 }
-.card:hover .aboutCard {
+
+.card:hover .aboutCard,
+.card:focus .aboutCard {
   display: block;
   transform: translateY(-100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -286,7 +287,6 @@ body {
 }
 .aboutCard {
   position: absolute;
-
   background-color: var(--aboutCard-bacground-color);
   color: var(--second-text-color);
   width: 100%;
@@ -295,6 +295,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   padding: 63px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cardText {
   outline: 1px solid var(--card-dorder-color);
@@ -459,7 +460,7 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--social-links-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .iconCompany:hover,
@@ -501,7 +502,7 @@ body {
   border-radius: 50px;
   cursor: pointer;
   fill: var(--social-links-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socialLinksItem {
   width: 20px;
@@ -587,7 +588,7 @@ Footer {
   cursor: pointer;
   background-color: var(--footer-icon--color);
   fill: var(--second-text-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socialLinksFooter {
   width: 20px;
